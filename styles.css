@@ -1,0 +1,524 @@
+*, ::after, ::before{
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body{
+    background: url('https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+}
+
+.weather-input select{
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    padding-left: 12px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.weather-cards .card{
+    background: url('https://www.shutterstock.com/shutterstock/videos/1092007221/thumb/1.jpg?ip=x480');
+    background-size: cover;
+    height: calc(15rem + 1.3rem);
+    border-radius: 5px;
+    padding: 8px 6px;
+    margin: 4px 0;
+    list-style: none;
+    width: 100%;
+}
+
+.weather-cards .card h4{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: .2rem;
+}
+
+.weather-cards .card h3{
+    font-weight: 900;
+    font-size: 1.4rem;
+    padding-left: .2rem;
+}
+
+.weather-cards .card img{
+    padding-left: .5rem;
+    margin: auto;
+}
+
+
+.current-weather h2{
+    font-size: 1.9rem;
+}
+
+.current-weather h2 p{
+    display: inline;
+}
+
+.weather-info h4 {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.current-weather .icon img{
+    max-width: 120px;
+    margin-top: 1em;
+}
+
+.current-weather .icon img{
+    content: "";
+    color: #6C757D;
+    font-size: 1.18rem;
+    padding: 0 15px;
+    background: skyblue;
+}
+
+.current-weather .icon h4{
+    margin-top: -2px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+}
+
+.current-weather .details h4{
+    font-weight: 600;
+}
+
+.weather-cards{
+    display: flex;
+    gap: 8px;
+}
+
+@media only screen and (min-width:375px) and (orientation: portrait){
+
+    .wrapper{
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .weather-input{
+        width: 100%;
+    }
+
+    .current-weather h2{
+        font-size: 1.3em;
+        line-height: 2.2rem;
+        
+    }
+
+    .weather-info h4 {
+        margin-top: .6rem;
+        font-size: .9rem;
+        font-weight: lighter;
+    }
+
+    .current-weather .icon img{
+        max-width: 120px;
+        margin-top: .3em;
+        margin-right: auto;
+    }
+
+    .current-weather .icon{
+        float: left;
+    }
+
+    .current-weather h2 p{
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .current-weather .icon h4{
+        text-transform: capitalize;
+        text-align: center;
+        margin: auto;
+        font-weight: 600;
+        width: max-content;
+        line-height: 2.5rem;
+    }
+
+    .weather-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .weather-cards .card{
+        background: url('https://i.pinimg.com/736x/3e/d9/b9/3ed9b984d2a5e96b9c3a3d68dcd8ee7b.jpg');
+        background-size: cover;
+        border: 1px solid black;
+        height: calc(14rem + 1rem);
+        border-radius: 5px;
+        padding: 8px 6px;
+        margin: auto;
+        list-style: none;
+        width: 100%;
+        
+    }
+
+    .weather-cards .card h4{
+        font-weight: bolder;
+        font-size: clamp(1rem,2vw,5rem);
+        padding-left: 6.5rem;
+    }
+
+    .weather-cards .card img{
+        width: 30%;
+    }
+
+}
+
+@media only screen and (min-width:375px) and (orientation: landscape){
+
+    .wrapper{
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
+
+    .weather-input{
+        width: 100%;
+        height: calc(100dvh - 9.6rem);
+    }
+
+    .current-weather h2{
+        font-size: 1.3em;
+        line-height: 1.5rem;     
+    }
+
+    .weather-info h4 {
+        margin-top: .6rem;
+        font-size: .9rem;
+        font-weight: lighter;
+    }
+
+    .current-weather .icon img{
+        max-width: 120px;
+        margin-top: .3em;
+        margin-right: auto;
+    }
+
+    .current-weather h2 p{
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .current-weather .icon h4{
+        text-transform: capitalize;
+        text-align: center;
+        margin: auto;
+        font-weight: 600;
+        width: max-content;
+        line-height: 2rem;
+    }
+
+    .weather-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .weather-cards .card{
+        background: url('https://i.pinimg.com/736x/3e/d9/b9/3ed9b984d2a5e96b9c3a3d68dcd8ee7b.jpg');
+        background-size: cover;
+        border: 1px solid black;
+        height: calc(8rem + 1rem);
+        border-radius: 5px;
+        padding: 8px 6px;
+        list-style: none;
+        width: calc(60% / 2);
+        margin: .1rem .1rem auto .1rem;
+        
+    }
+
+    .weather-cards .card h4{
+        font-weight: bolder;
+        font-size: .5rem;
+        padding-left: 6.5rem;
+        line-height: .5rem;
+    }
+
+    .weather-cards .card img{
+        width: 50%;
+    }
+
+    .weather-cards .card h4{
+        font-weight: 600;
+        font-size: .5rem;
+        padding-left: .2rem;
+    }
+    
+    .weather-cards .card h3{
+        font-weight: 900;
+        font-size: .8rem;
+        padding-left: .2rem;
+    }
+
+}
+
+@media only screen and (min-width:767px) and (max-width:1024px) and (orientation: portrait){
+
+    .wrapper{
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
+
+    .weather-input{
+        width: 100%;
+        height: calc(100dvh - 40rem);
+    }
+
+    .current-weather h2{
+        font-size: 1.3em;
+        line-height: 2rem;
+        
+    }
+
+    .weather-info h4 {
+        margin-top: .6rem;
+        font-size: .9rem;
+        font-weight: lighter;
+    }
+
+    .current-weather .icon img{
+        max-width: 120px;
+        margin-top: .3em;
+        margin-right: auto;
+    }
+
+    .current-weather h2 p{
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .current-weather .icon h4{
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 600;
+        width: max-content;
+        line-height: 2rem;
+    }
+
+    .weather-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .weather-cards .card{
+        background: url('https://i.pinimg.com/736x/3e/d9/b9/3ed9b984d2a5e96b9c3a3d68dcd8ee7b.jpg');
+        background-size: cover;
+        border: 1px solid black;
+        height: calc(9rem + 1.8rem);
+        border-radius: 5px;
+        padding: 4px 4px;
+        list-style: none;
+        width: calc(100% / 4 + 1.8rem);
+        margin: .5rem .1rem auto .1rem;       
+    }
+
+    .weather-cards .card h4{
+        font-weight: bolder;
+        font-size: .9rem;
+        padding-left: 1.2rem;
+        line-height: 1rem;
+    }
+
+    .weather-cards .card h3{
+
+        font-weight: 900;
+        font-size: 1.2rem;
+        
+    }
+
+    .weather-cards .card img{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width:767px) and (max-width:1024px) and (orientation: landscape){
+
+    .wrapper{
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
+
+    .weather-input{
+        width: 100%;
+        height: calc(100dvh - 30rem);
+    }
+
+    .current-weather h2{
+
+        font-size: 2em;
+        line-height: 2rem;
+        
+    }
+
+    .weather-info h4 {
+        margin-top: .6rem;
+        font-size: .9rem;
+        font-weight: lighter;
+    }
+
+    .current-weather .icon img{
+        max-width: 120px;
+        margin-top: .3em;
+        margin-right: auto;
+    }
+
+    .current-weather h2 p{
+        display: block;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .current-weather .icon h4{
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 600;
+        width: max-content;
+        line-height: 2rem;
+    }
+
+    .weather-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .weather-cards .card{
+        background: url('https://i.pinimg.com/736x/3e/d9/b9/3ed9b984d2a5e96b9c3a3d68dcd8ee7b.jpg');
+        background-size: cover;
+        border: 1px solid black;
+        height: calc(10rem + 1.4rem);
+        border-radius: 5px;
+        padding: 4px 4px;
+        list-style: none;
+        width: calc(100% / 7 + 29px);
+        margin: .5rem .1rem auto .1rem;       
+    }
+
+    .weather-cards .card h4{
+        font-weight: bolder;
+        font-size: .8rem;
+        padding-left: 1rem;
+        line-height: .8rem;
+    }
+
+    .weather-cards .card h3{
+        font-weight: bolder;
+        font-size: 1rem;
+        
+    }
+
+    .weather-cards .card img{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (min-width:1090px){
+
+    .wrapper{
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
+
+    .weather-input{
+        width: 100%;
+        height: calc(100dvh - 6rem);
+    }
+
+
+    .weather-input select{
+        width: 100%;
+        height: 2rem;
+        outline: none;
+        padding-left: 12px;
+        border-radius: 4px;
+        border: 2px solid black;
+    }
+    
+    .weather-cards .card{
+        background: url('https://www.shutterstock.com/shutterstock/videos/1092007221/thumb/1.jpg?ip=x480');
+        background-size: cover;
+        height: calc(14rem + 1rem);
+        border-radius: 5px;
+        padding: 8px 6px;
+        margin: .9rem 0;
+        list-style: none;
+        width: calc(100% / 4 - 15px);
+    }
+    
+    .weather-cards .card h4{
+        font-weight: 600;
+        font-size: 4rem;
+        padding-left: .2rem;
+        margin: 1.5rem 1rem;
+    }
+    
+    .weather-cards .card h3{
+        font-weight: 900;
+        font-size: 4rem;
+        padding-left: .2rem;
+    }
+    
+    .weather-cards .card img{
+        padding-left: .5rem;
+        margin: auto;
+    }
+    
+    
+    .current-weather h2{
+        font-size: 1.9rem;
+    }
+    
+    .current-weather h2 p{
+        display: inline;
+    }
+    
+    .weather-info h4 {
+        margin-top: 12px;
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+    
+    .current-weather .icon img{
+        max-width: 120px;
+        margin-top: 1em;
+    }
+    
+    .current-weather .icon img{
+        content: "";
+        color: #6C757D;
+        font-size: 1.18rem;
+        padding: 0 15px;
+        background: skyblue;
+    }
+    
+    .current-weather .icon h4{
+        margin-top: -2px;
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .current-weather .details h4{
+        font-weight: 600;
+    }
+    
+    .weather-cards{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+
+    .weather-cards .card h4{
+        font-weight: bolder;
+        font-size: .9rem;
+        line-height: .8rem;
+    }
+
+    .weather-cards .card h3{
+
+        font-weight: 900;
+        font-size: 1.2rem;
+        
+    }
+
+}

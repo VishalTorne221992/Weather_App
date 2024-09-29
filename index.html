@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="script.js" defer></script>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="w-dvw h-dvh">
+    <h1 class="text-white text-center bg-black bg-opacity-75 font-bold p-4 text-3xl iPhone-SE:text-xl
+    iPhone-SE:p-2">Weather Dashboard</h1>
+    <div class="wrapper w-full flex gap-12 px-10 py-3 iPhone:px-2 iPhone:gap-5 
+    iPad-Mini_P:px-2 iPad-Mini_P:gap-5 iPad-Mini_L:px-2 iPad-Mini_L:gap-3 iPad-Mini_L:py-4">
+        <div class="weather-input space-y-4 iPhone-SE:space-y-2 p-2 w-[45%] iPhone:w-full iPhone:font-normal
+        iPhone-SE:w-[30%] iPhone-SE:text-xs iPad-Mini_P:w-[35%] border-1
+         bg-blue-100 bg-opacity-85 font-medium rounded-lg" style="box-shadow: 0 2px 1px 1px black, 0 1px 8px 1px black;">
+            <h3 class="px-1 font-semibold">Enter City Name: </h3>
+            <input class="city-input w-full h-10 outline-none px-3 rounded border-2 border-black" type="text"
+                placeholder="Enter a City name" required>
+            <button
+                class="search-btn w-full h-[2.3rem] text-white cursor-pointer outline-none bg-indigo-900 rounded font-semibold px-4">Search</button>
+            <div class="separator w-full flex justify-center items-center h-[.9px] bg-gray-500"
+                style="box-shadow: 0 0 2px 0 black;"></div>
+            <button
+                class="location-btn w-full h-[2.3rem] text-white cursor-pointer outline-none bg-red-800 rounded font-semibold px-4">Use
+                Current Location</button>
+        </div>
+        <div class="weather-info w-full iPhone-SE:w-[70%] iPad-Mini_P:w-[65%]">
+            <div class="current-weather flex justify-between text-lg bg-blue-100 
+            bg-opacity-80 pt-5 pr-16 pb-5 pl-5 iPhone:pr-10 font-semibold rounded-md
+            iPhone-SE:pt-3 iPhone-SE:pr-10 iPhone-SE:pb-3 iPhone-SE:pl-3 iPad-Mini_P:font-medium
+            iPad-Mini_P:pl-3"
+                style="box-shadow: 0 0 0 0 black, 0 1px 8px 0 black;">
+                <div class="details">
+                    <h2><span>Loading....</span></h2>
+                    <h4>Temperature : </h4>
+                    <h4>Wind : m/s</h4>
+                    <h4>Humidity: </h4>
+                </div>
+                <div class="icon">
+                    <span>Loading....</span>
+                </div>
+            </div>
+            <div class="five_days-forcast mt-3 text-base iPhone-SE:mt-0">
+                <h2 class="mt-2 text-white font-semibold px-2 py-2 bg-black bg-opacity-75 text-2xl
+                iPhone:font-medium iPhone-SE:font-semibold iPhone-SE:text-lg">5 Day Forcast</h2>
+                <ul class="weather-cards">
+                    <li class="card">
+                        <h3><span>Loading....</span></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <h4>Temp : <span>Loading....</span></h4>
+                        <h4>Wind : <span>Loading....</span> m/s</h4>
+                        <h4>Humidity: <span>Loading....</span></h4>
+                    </li>
+                    <li class="card">
+                        <h3><span>Loading....</span></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <h4>Temp : <span>Loading....</span></h4>
+                        <h4>Wind : <span>Loading....</span> m/s</h4>
+                        <h4>Humidity: <span>Loading....</span></h4>
+                    </li>
+                    <li class="card">
+                        <h3><span>Loading....</span></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <h4>Temp : <span>Loading....</span></h4>
+                        <h4>Wind : <span>Loading....</span> m/s</h4>
+                        <h4>Humidity: <span>Loading....</span></h4>
+                    </li>
+                    <li class="card">
+                        <h3><span>Loading....</span></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <h4>Temp : <span>Loading....</span></h4>
+                        <h4>Wind : <span>Loading....</span> m/s</h4>
+                        <h4>Humidity: <span>Loading....</span></h4>
+                    </li>
+                    <li class="card">
+                        <h3><span>Loading....</span></h3>
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <h4>Temp : <span>Loading....</span></h4>
+                        <h4>Wind : <span>Loading....</span> m/s</h4>
+                        <h4>Humidity: <span>Loading....</span></h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
